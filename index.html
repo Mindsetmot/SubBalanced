@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alat Pemformat Subtitle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pemformat Subtitle Otomatis</h1>
+        <p>Unggah file subtitle (.srt) Anda dan alat ini akan memecah dialog panjang menjadi baris-baris yang mudah dibaca.</p>
+        
+        <div class="input-section">
+            <label for="file-input" class="button-label">
+                Pilih File Subtitle
+            </label>
+            <input type="file" id="file-input" accept=".srt" hidden>
+            <span id="file-name-display"></span>
+        </div>
+
+        <div class="editor-section">
+            <label for="subtitle-editor">Hasil Subtitle:</label>
+            <textarea id="subtitle-editor" placeholder="Teks subtitle akan muncul di sini setelah Anda mengunggah file..." rows="15" readonly></textarea>
+        </div>
+
+        <button id="download-btn" class="button" disabled>Unduh Subtitle Terformat</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
